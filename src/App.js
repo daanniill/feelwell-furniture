@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Collection from "./pages/Collection";
-import Materials from "./pages/Materials";
+import Product from "./pages/Product";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import { useEffect, useState } from "react";
@@ -34,7 +34,7 @@ function AnimatedRoutes({ theme }) {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home theme={theme} />} />
           <Route path="/collection" element={<Collection theme={theme} />} />
-          <Route path="/materials" element={<Materials theme={theme} />} />
+          <Route path="/product/:id" element={<Product theme={theme} />} />
           <Route path="/contact" element={<Contact theme={theme} />} />
           <Route path="/about" element={<About theme={theme} />} />
         </Routes>

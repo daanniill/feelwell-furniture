@@ -1,13 +1,7 @@
 import { Link } from "react-router-dom";
-import prod1 from "../assets/images/prod1.jpg";
-import prod2 from "../assets/images/prod2.jpg";
-import prod3 from "../assets/images/prod3.jpg";
+import { products } from "../data/products";
 
-const featuredItems = [
-  { name: "CP24-14 Bed", image: prod1, price: "$487" },
-  { name: "CP24-46 Bed", image: prod2, price: "$515" },
-  { name: "CP24-14 Bed", image: prod3, price: "$487" },
-];
+const featuredItems = products.slice(0, 3);
 
 export default function FeaturedCollection() {
   return (
@@ -17,23 +11,24 @@ export default function FeaturedCollection() {
           Featured Collection
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-          {featuredItems.map((item) => (
-            <div
-              key={item.name}
-              className="bg-white dark:bg-neutral-800 rounded-2xl shadow-sm hover:shadow-lg transition-all overflow-hidden"
+          {featuredItems.map((product) => (
+            <Link
+              key={product.id}
+              to={`/product/${product.id}`}
+              className="bg-white dark:bg-neutral-800 rounded-2xl shadow-sm hover:shadow-lg transition-all overflow-hidden block"
             >
               <img
-                src={item.image}
-                alt={item.name}
+                src={product.images[0]}
+                alt={product.title}
                 className="w-full h-64 object-cover"
               />
               <div className="p-6 text-center">
                 <h3 className="text-xl font-medium text-gray-900 dark:text-gray-100 mb-2">
-                  {item.name}
+                  {product.title}
                 </h3>
-                <p className="text-gray-500 dark:text-gray-400">{item.price}</p>
+                <p className="text-gray-500 dark:text-gray-400">{product.price}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="text-center">
