@@ -25,17 +25,17 @@ const furniture = [
   export default function Collection() {
     return (
       <div className="px-8 py-16">
-        <h2 className="text-3xl font-light text-center mb-10">Our Collection</h2>
+        <h2 className="text-3xl font-light text-center mb-10 text-gray-900 dark:text-gray-100">Our Collection</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {furniture.map((item) => (
             <div
               key={item.name}
-              className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all"
+              className="bg-white dark:bg-neutral-800 rounded-2xl shadow-sm hover:shadow-lg transition-all"
             >
               <img src={item.image} alt={item.name} className="w-full h-64 object-cover rounded-t-2xl" />
               <div className="p-6 text-center">
-                <h3 className="text-xl font-medium">{item.name}</h3>
-                <p className="text-gray-500">{item.price}</p>
+                <h3 className="text-xl font-medium text-gray-900 dark:text-gray-100">{item.name}</h3>
+                <p className="text-gray-500 dark:text-gray-400">{item.price}</p>
               </div>
             </div>
           ))}
