@@ -13,6 +13,11 @@ import { useEffect, useState } from "react";
 function AnimatedRoutes({ theme }) {
   const location = useLocation();
 
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location.pathname]);
+
   // Page transition animation variants
   const pageVariants = {
     initial: { opacity: 0, y: 30 },
