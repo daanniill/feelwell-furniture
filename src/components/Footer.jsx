@@ -1,3 +1,26 @@
+import { motion } from "framer-motion";
+import instagramIcon from "../assets/icons/instagram.svg";
+import facebookIcon from "../assets/icons/facebook.svg";
+import pinterestIcon from "../assets/icons/pinterest.svg";
+
+const socialLinks = [
+  {
+    name: "Instagram",
+    icon: instagramIcon,
+    href: "#"
+  },
+  {
+    name: "Facebook",
+    icon: facebookIcon,
+    href: "#"
+  },
+  {
+    name: "Pinterest",
+    icon: pinterestIcon,
+    href: "#"
+  }
+];
+
 export default function Footer() {
   return (
     <footer className="py-8 bg-gray-100 dark:bg-neutral-900 border-t border-gray-200 dark:border-neutral-800">
@@ -15,24 +38,22 @@ export default function Footer() {
 
           {/* Social Media Links */}
           <div className="flex gap-4">
-            <a
-              href="#"
-              className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-            >
-              Instagram
-            </a>
-            <a
-              href="#"
-              className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-            >
-              Facebook
-            </a>
-            <a
-              href="#"
-              className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-            >
-              Pinterest
-            </a>
+            {socialLinks.map((link) => (
+              <motion.a
+                key={link.name}
+                href={link.href}
+                className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <img
+                  src={link.icon}
+                  alt={link.name}
+                  className="w-5 h-5 dark:invert dark:opacity-80"
+                />
+                <span>{link.name}</span>
+              </motion.a>
+            ))}
           </div>
 
           {/* Contact Information */}
