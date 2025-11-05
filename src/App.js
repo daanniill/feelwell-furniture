@@ -8,6 +8,7 @@ import Collection from "./pages/Collection";
 import Product from "./pages/Product";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Reviews from "./pages/Reviews";
 import { useEffect, useState } from "react";
 
 function AnimatedRoutes({ theme }) {
@@ -35,6 +36,7 @@ function AnimatedRoutes({ theme }) {
           <Route path="/" element={<Home theme={theme} />} />
           <Route path="/collection" element={<Collection theme={theme} />} />
           <Route path="/product/:id" element={<Product theme={theme} />} />
+          <Route path="/reviews" element={<Reviews theme={theme} />} />
           <Route path="/contact" element={<Contact theme={theme} />} />
           <Route path="/about" element={<About theme={theme} />} />
         </Routes>

@@ -161,51 +161,51 @@ export const products = [
     images: [prod6, prod7, prod8]
   },
   {
-    id: "cp24-14-bed-6",
-    category: "Beds",
-    title: "CP24-14 Bed",
+    id: "cp24-14-sofa-1",
+    category: "Sofas",
+    title: "CP24-14 Sofa",
     price: "$487",
-    description: "Premium leather bed with high-resilience foam and Russian larch wood frame",
-    dimensions: "237×210×109cm",
+    description: "Premium leather sofa with high-resilience foam and Russian larch wood frame",
+    dimensions: "220×90×85cm",
     materials: ["Top-grain Leather", "High-resilience Foam", "Russian Larch Wood Frame"],
     colors: ["Black", "Brown", "Gray"],
     keyFeatures: [
-      "1.8×2.0m Specification",
-      "40cm Headboard",
-      "25cm Mattress",
-      "5cm Head/Foot Legs"
+      "3-Seater Design",
+      "40cm Back Height",
+      "25cm Seat Depth",
+      "5cm Leg Height"
     ],
     specifications: {
-      size: "1.8×2.0m",
-      externalDimensions: "237×210×109cm",
-      headboard: "40cm",
-      mattress: "25cm",
-      legs: "5cm head, 5cm foot",
+      size: "3-Seater",
+      externalDimensions: "220×90×85cm",
+      backHeight: "40cm",
+      seatDepth: "25cm",
+      legs: "5cm",
       binding: "Machine molding side"
     },
     images: [prod7, prod8, prod9]
   },
   {
-    id: "cp24-14-bed-7",
-    category: "Beds",
-    title: "CP24-14 Bed",
+    id: "cp24-14-sofa-2",
+    category: "Sofas",
+    title: "CP24-14 Sofa",
     price: "$487",
-    description: "Premium leather bed with high-resilience foam and Russian larch wood frame",
-    dimensions: "237×210×109cm",
+    description: "Premium leather sofa with high-resilience foam and Russian larch wood frame",
+    dimensions: "220×90×85cm",
     materials: ["Top-grain Leather", "High-resilience Foam", "Russian Larch Wood Frame"],
     colors: ["Brown", "Tan", "Walnut"],
     keyFeatures: [
-      "1.8×2.0m Specification",
-      "40cm Headboard",
-      "25cm Mattress",
-      "5cm Head/Foot Legs"
+      "3-Seater Design",
+      "40cm Back Height",
+      "25cm Seat Depth",
+      "5cm Leg Height"
     ],
     specifications: {
-      size: "1.8×2.0m",
-      externalDimensions: "237×210×109cm",
-      headboard: "40cm",
-      mattress: "25cm",
-      legs: "5cm head, 5cm foot",
+      size: "3-Seater",
+      externalDimensions: "220×90×85cm",
+      backHeight: "40cm",
+      seatDepth: "25cm",
+      legs: "5cm",
       binding: "Machine molding side"
     },
     images: [prod8, prod9, prod10]
@@ -236,26 +236,26 @@ export const products = [
     images: [prod9, prod10, prod1]
   },
   {
-    id: "cp24-14-bed-9",
-    category: "Beds",
-    title: "CP24-14 Bed",
+    id: "cp24-14-sofa-3",
+    category: "Sofas",
+    title: "CP24-14 Sofa",
     price: "$487",
-    description: "Premium leather bed with high-resilience foam and Russian larch wood frame",
-    dimensions: "237×210×109cm",
+    description: "Premium leather sofa with high-resilience foam and Russian larch wood frame",
+    dimensions: "220×90×85cm",
     materials: ["Top-grain Leather", "High-resilience Foam", "Russian Larch Wood Frame"],
     colors: ["Brown", "Black", "Tan"],
     keyFeatures: [
-      "1.8×2.0m Specification",
-      "40cm Headboard",
-      "25cm Mattress",
-      "5cm Head/Foot Legs"
+      "3-Seater Design",
+      "40cm Back Height",
+      "25cm Seat Depth",
+      "5cm Leg Height"
     ],
     specifications: {
-      size: "1.8×2.0m",
-      externalDimensions: "237×210×109cm",
-      headboard: "40cm",
-      mattress: "25cm",
-      legs: "5cm head, 5cm foot",
+      size: "3-Seater",
+      externalDimensions: "220×90×85cm",
+      backHeight: "40cm",
+      seatDepth: "25cm",
+      legs: "5cm",
       binding: "Machine molding side"
     },
     images: [prod10, prod1, prod2]

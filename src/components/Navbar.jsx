@@ -24,6 +24,9 @@ export default function Navbar({ theme, setTheme }) {
         <NavLink to="/collection" className={navLinkClass}>
           Collection
         </NavLink>
+        <NavLink to="/reviews" className={navLinkClass}>
+          Reviews
+        </NavLink>
         <NavLink to="/about" className={navLinkClass}>
           About
         </NavLink>

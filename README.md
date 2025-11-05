@@ -1,6 +1,91 @@
-# Getting Started with Create React App
+# FeelWellFurniture
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive furniture e-commerce website built with React, featuring dark/light theme support, product catalog, and smooth animations.
+
+## Features
+
+- 🛋️ **Product Catalog** - Browse furniture collections with category filtering
+- 🎨 **Dark/Light Theme** - Toggle between light and dark modes
+- 📱 **Responsive Design** - Mobile-friendly interface
+- 🎭 **Smooth Animations** - Page transitions powered by Framer Motion
+- 🛍️ **Product Details** - Detailed product pages with image galleries
+- ⭐ **Customer Reviews** - Testimonials and reviews section
+- 📧 **Contact Form** - Contact page with business information
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- **Node.js** (version 14.0 or higher) - [Download Node.js](https://nodejs.org/)
+- **npm** (comes with Node.js) or **yarn**
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+
+## Installation
+
+### Step 1: Clone the Repository
+
+```bash
+git clone <repository-url>
+cd feelwell-furniture
+```
+
+### Step 2: Install Dependencies
+
+Install all required dependencies using npm:
+
+```bash
+npm install
+```
+
+This will install all the dependencies listed in `package.json`.
+
+## Dependencies
+
+### Core Dependencies
+
+- **react** (^19.2.0) - React library for building user interfaces
+- **react-dom** (^19.2.0) - React DOM renderer
+- **react-router-dom** (^6.30.1) - Routing library for React applications
+- **react-scripts** (^5.0.1) - Create React App scripts and configuration
+
+### UI & Styling
+
+- **tailwindcss** (^3.4.18) - Utility-first CSS framework
+- **autoprefixer** (^10.4.21) - PostCSS plugin for adding vendor prefixes
+- **framer-motion** (^12.23.24) - Animation library for React
+- **lucide-react** (^0.552.0) - Icon library for React
+
+### Development Dependencies
+
+- **@testing-library/react** (^16.3.0) - Testing utilities for React
+- **@testing-library/jest-dom** (^6.9.1) - Custom Jest matchers
+- **@testing-library/user-event** (^13.5.0) - User event simulation
+- **@testing-library/dom** (^10.4.1) - DOM testing utilities
+- **web-vitals** (^2.1.4) - Web performance metrics
+
+## Getting Started
+
+### Step 3: Start the Development Server
+
+Run the following command to start the development server:
+
+```bash
+npm start
+```
+
+The application will open in your browser at [http://localhost:3000](http://localhost:3000).
+
+The page will automatically reload if you make changes to the code.
+
+### Step 4: Build for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+This creates a `build` folder with optimized production files ready for deployment.
 
 ## Available Scripts
 
@@ -8,63 +93,120 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the `build` folder. The build is optimized and minified for best performance.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note: This is a one-way operation. Once you eject, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ejects from Create React App, giving you full control over the configuration files.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+feelwell-furniture/
+├── public/                 # Static files
+├── src/
+│   ├── assets/            # Images and other assets
+│   ├── components/        # Reusable React components
+│   │   ├── Footer.jsx
+│   │   ├── HeroSection.jsx
+│   │   ├── Navbar.jsx
+│   │   └── FeaturedCollection.jsx
+│   ├── data/              # Data files
+│   │   └── products.js
+│   ├── pages/             # Page components
+│   │   ├── Home.jsx
+│   │   ├── Collection.jsx
+│   │   ├── Product.jsx
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   └── Reviews.jsx
+│   ├── App.js             # Main app component
+│   ├── index.js           # Entry point
+│   └── index.css          # Global styles
+├── tailwind.config.js     # Tailwind CSS configuration
+├── postcss.config.js      # PostCSS configuration
+└── package.json           # Project dependencies
+```
 
-## Learn More
+## Features Overview
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Home Page**: Hero section with call-to-action buttons and featured products
+- **Collection Page**: Browse all products with category filtering (All, Beds, Sofas)
+- **Product Pages**: Detailed product information with image galleries
+- **Reviews Page**: Customer testimonials and reviews
+- **Contact Page**: Contact form and business information
+- **About Page**: Company information and story
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Theme Support
 
-### Code Splitting
+The application supports both light and dark themes. Users can toggle between themes using the moon/sun icon in the navigation bar. The theme preference is saved to localStorage.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Browser Support
 
-### Analyzing the Bundle Size
+The application is tested and works on:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Troubleshooting
 
-### Making a Progressive Web App
+### Port Already in Use
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If port 3000 is already in use, you can specify a different port:
 
-### Advanced Configuration
+```bash
+PORT=3001 npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Module Not Found Errors
 
-### Deployment
+If you encounter module not found errors, try:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
 
-### `npm run build` fails to minify
+### Build Errors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Clear the cache and rebuild:
+
+```bash
+npm cache clean --force
+rm -rf node_modules
+npm install
+npm run build
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is private and proprietary.
+
+## Contact
+
+For questions or support, please contact:
+- Email: clutchdev.apps@gmail.com
+- Phone: 949-910-7879
+
+---
+
+Built with ❤️ using React and Tailwind CSS
