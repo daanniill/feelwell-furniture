@@ -53,7 +53,7 @@ export default function Product() {
               <img
                 src={product.images[selectedImage]}
                 alt={product.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="grid grid-cols-3 gap-4">
@@ -61,7 +61,7 @@ export default function Product() {
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
-                  className={`aspect-square overflow-hidden rounded-lg ${
+                  className={`aspect-square overflow-hidden rounded-lg bg-gray-100 dark:bg-neutral-800 ${
                     selectedImage === index
                       ? "ring-2 ring-black dark:ring-white"
                       : "opacity-70 hover:opacity-100"
@@ -70,7 +70,7 @@ export default function Product() {
                   <img
                     src={image}
                     alt={`${product.title} view ${index + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </button>
               ))}
