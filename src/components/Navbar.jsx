@@ -27,9 +27,6 @@ export default function Navbar({ theme, setTheme }) {
         <NavLink to="/reviews" className={navLinkClass}>
           Reviews
         </NavLink>
-        <NavLink to="/about" className={navLinkClass}>
-          About
-        </NavLink>
         <NavLink to="/contact" className={navLinkClass}>
           Contact
         </NavLink>

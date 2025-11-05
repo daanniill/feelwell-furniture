@@ -1,4 +1,6 @@
+import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { motion, useInView } from "framer-motion";
 import { products } from "../data/products";
 
 const colorMap = {
@@ -14,8 +16,17 @@ const colorMap = {
 const featuredItems = products.slice(0, 3);
 
 export default function FeaturedCollection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, amount: 0.2 });
+
   return (
-    <section className="py-20 px-8">
+    <motion.section
+      ref={ref}
+      className="py-20 px-8"
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-light text-center mb-12 text-gray-900 dark:text-gray-100">
           Featured Collection
@@ -105,7 +116,7 @@ export default function FeaturedCollection() {
           </Link>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
