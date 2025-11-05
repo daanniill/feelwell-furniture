@@ -102,7 +102,12 @@ export default function Contact() {
                 <span className="text-2xl">📞</span>
                 <div>
                   <p className="font-medium text-gray-900 dark:text-gray-100 mb-1">Phone</p>
-                  <p className="text-gray-600 dark:text-gray-300">949-910-7879</p>
+                  <a
+                    href="tel:949-910-7879"
+                    className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+                  >
+                    949-910-7879
+                  </a>
                 </div>
               </div>
 
@@ -111,7 +116,12 @@ export default function Contact() {
                 <span className="text-2xl">✉️</span>
                 <div>
                   <p className="font-medium text-gray-900 dark:text-gray-100 mb-1">Email</p>
-                  <p className="text-gray-600 dark:text-gray-300">clutchdev.apps@gmail.com</p>
+                  <a
+                    href="mailto:clutchdev.apps@gmail.com"
+                    className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+                  >
+                    clutchdev.apps@gmail.com
+                  </a>
                 </div>
               </div>
 
@@ -120,9 +130,14 @@ export default function Contact() {
                 <span className="text-2xl">📍</span>
                 <div>
                   <p className="font-medium text-gray-900 dark:text-gray-100 mb-1">Address</p>
-                  <p className="text-gray-600 dark:text-gray-300">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=9500+Gilman+Dr,+La+Jolla,+CA+92093"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+                  >
                     9500 Gilman Dr, La Jolla, CA 92093
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

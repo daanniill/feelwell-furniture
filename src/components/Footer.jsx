@@ -58,10 +58,18 @@ export default function Footer() {
 
           {/* Contact Information */}
           <div className="text-center">
-            <p className="text-sm text-gray-600 dark:text-gray-300">949-910-7879</p>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
+            <a
+              href="tel:949-910-7879"
+              className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors block"
+            >
+              949-910-7879
+            </a>
+            <a
+              href="mailto:clutchdev.apps@gmail.com"
+              className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors block"
+            >
               clutchdev.apps@gmail.com
-            </p>
+            </a>
           </div>
 
           {/* Copyright */}
