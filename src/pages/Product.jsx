@@ -171,9 +171,12 @@ export default function Product() {
               </dl>
             </div>
 
-            {/* Add to Cart Button */}
-            <button className="w-full bg-black dark:bg-white dark:text-black text-white px-8 py-4 rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition-all font-medium text-lg">
-              Add to Cart
+            {/* Inquire Button */}
+            <button 
+              onClick={() => navigate("/contact")}
+              className="w-full bg-black dark:bg-white dark:text-black text-white px-8 py-4 rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition-all font-medium text-lg"
+            >
+              Inquire about this product
             </button>
           </div>
         </div>
