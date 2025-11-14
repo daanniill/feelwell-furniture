@@ -212,7 +212,7 @@ export const products = [
     images: [bed6, bed66]
   },
   {
-    id: "cp24-14-bed-1",
+    id: "cp24-14-bed-6",
     category: "Beds",
     title: "CP24-14 Bed",
     price: "$487",
@@ -237,7 +237,7 @@ export const products = [
     images: [bed7, bed77]
   },
   {
-    id: "cp24-14-bed-1",
+    id: "cp24-14-bed-7",
     category: "Beds",
     title: "CP24-14 Bed",
     price: "$487",
@@ -262,7 +262,7 @@ export const products = [
     images: [bed8, bed88]
   },
   {
-    id: "cp24-14-bed-1",
+    id: "cp24-14-bed-8",
     category: "Beds",
     title: "CP24-14 Bed",
     price: "$487",
@@ -287,7 +287,7 @@ export const products = [
     images: [bed9, bed99, bed999]
   },
   {
-    id: "cp24-14-bed-1",
+    id: "cp24-14-bed-9",
     category: "Beds",
     title: "CP24-14 Bed",
     price: "$487",
@@ -312,7 +312,7 @@ export const products = [
     images: [bed10, bed1010, bed101010]
   },
   {
-    id: "cp24-14-bed-1",
+    id: "cp24-14-bed-10",
     category: "Beds",
     title: "CP24-14 Bed",
     price: "$487",
@@ -337,7 +337,7 @@ export const products = [
     images: [bedeleven, bedeleven1, bedeleven11]
   },
   {
-    id: "cp24-14-bed-1",
+    id: "cp24-14-bed-11",
     category: "Beds",
     title: "CP24-14 Bed",
     price: "$487",
@@ -362,7 +362,7 @@ export const products = [
     images: [bed12, bed1212, bed121212]
   },
   {
-    id: "cp24-14-bed-1",
+    id: "cp24-14-bed-12",
     category: "Beds",
     title: "CP24-14 Bed",
     price: "$487",
@@ -437,7 +437,7 @@ export const products = [
     images: [sofa2, sofa22, sofa222]
   },
   {
-    id: "cp24-14-sofa-2",
+    id: "cp24-14-sofa-3",
     category: "Sofas",
     title: "CP24-14 Sofa",
     price: "$487",
@@ -462,7 +462,7 @@ export const products = [
     images: [sofa3, sofa33, sofa333]
   },
   {
-    id: "cp24-14-sofa-3",
+    id: "cp24-14-sofa-7",
     category: "Sofas",
     title: "CP24-14 Sofa",
     price: "$487",
@@ -487,7 +487,7 @@ export const products = [
     images: [sofa4, sofa44, sofa444]
   },
   {
-    id: "cp24-14-sofa-2",
+    id: "cp24-14-sofa-8",
     category: "Sofas",
     title: "CP24-14 Sofa",
     price: "$487",
@@ -512,7 +512,7 @@ export const products = [
     images: [sofa5, sofa55, sofa555]
   },
   {
-    id: "cp24-14-sofa-2",
+    id: "cp24-14-sofa-5",
     category: "Sofas",
     title: "CP24-14 Sofa",
     price: "$487",
@@ -537,7 +537,7 @@ export const products = [
     images: [sofa6, sofa66, sofa666]
   },
   {
-    id: "cp24-14-sofa-2",
+    id: "cp24-14-sofa-9",
     category: "Sofas",
     title: "CP24-14 Sofa",
     price: "$487",
